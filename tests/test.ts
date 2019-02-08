@@ -18,6 +18,7 @@ const removeComments = (str: string): string => {
 
 describe("tsconfig.json", () => {
   let program: ts.Program;
+  let results: ts.EmitResult;
 
   before(() => {
     const tsconfigPath = resolve(__dirname, "../tsconfig.json");
@@ -26,6 +27,7 @@ describe("tsconfig.json", () => {
     const programPath = resolve(__dirname, "./program.ts");
     const { compilerOptions } = options;
     program = ts.createProgram([programPath], compilerOptions);
+    results = program.emit();
   });
 
   it("generates files in dist", () => {
@@ -38,7 +40,6 @@ describe("tsconfig.json", () => {
   it("compiles with no warnings (except missing files)", () => {
     const allowMissingFile = (diagnostic: ts.Diagnostic) =>
       diagnostic.code === 6035;
-    const results = program.emit();
     let allDiagnostics = ts
       .getPreEmitDiagnostics(program)
       .concat(results.diagnostics)
