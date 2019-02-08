@@ -5,14 +5,14 @@
 ## Usage
 
 ```bash
-npm install --save-dev @cablanchard/tsconfig.json
+npm install --save-dev @cablanchard/tsconfig
 ```
 
 In `tsconfig.json`
 
 ```json
 {
-  "extends": "@cablanchard/tsconfig.json",
+  "extends": "@cablanchard/tsconfig/tsconfig.json",
   "include": [
     "lib/**/*"
   ]

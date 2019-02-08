@@ -1,5 +1,5 @@
 {
-  "name": "@cablanchard/tsconfig.json",
+  "name": "@cablanchard/tsconfig",
   "description": "Base tsconfig.json configuration",
   "repository": {
     "type": "git",
