@@ -12,7 +12,10 @@ In `tsconfig.json`
 
 ```json
 {
-  "extends": "@cablanchard/tsconfig/tsconfig.json",
+  "extends": "@cablanchard/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
   "include": [
     "lib/**/*"
   ]
