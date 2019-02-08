@@ -1,0 +1,30 @@
+{
+  "name": "@cablanchard/tsconfig.json",
+  "description": "Base tsconfig.json configuration",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cblanc/tsconfig.json"
+  },
+  "version": "0.0.1",
+  "files": [
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/mocha --opts mocha.opts"
+  },
+  "engines": {
+    "node": ">=8.0"
+  },
+  "author": "Christopher Blanchard",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "~4.1.7",
+    "@types/mocha": "~5.2.5",
+    "@types/node": "~10.12.23",
+    "chai": "~4.2.0",
+    "mocha": "~5.2.0",
+    "ts-node": "~8.0.1",
+    "typescript": "~3.3.1"
+  },
+  "dependencies": {}
+}
