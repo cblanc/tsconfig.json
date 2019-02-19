@@ -10,7 +10,15 @@
     "tsconfig.json"
   ],
   "scripts": {
-    "test": "NODE_ENV=test node_modules/.bin/mocha --opts mocha.opts"
+    "test": "NODE_ENV=test node_modules/.bin/mocha"
+  },
+  "mocha": {
+    "spec": "tests/*.ts",
+    "exit": true,
+    "fullTrace": true,
+    "require": [
+      "ts-node/register"
+    ]
   },
   "engines": {
     "node": ">=8.0"
@@ -22,7 +30,7 @@
     "@types/mocha": "~5.2.5",
     "@types/node": "~11.9.0",
     "chai": "~4.2.0",
-    "mocha": "~5.2.0",
+    "mocha": "~6.0.0",
     "ts-node": "~8.0.1",
     "typescript": "~3.3.1"
   },
