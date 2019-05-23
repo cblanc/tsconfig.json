@@ -1,6 +1,7 @@
-[![CircleCI](https://circleci.com/gh/cblanc/tsconfig.json.svg?style=svg)](https://circleci.com/gh/cblanc/tsconfig.json) 
-
 # tsconfig.json
+
+[![CircleCI](https://circleci.com/gh/cblanc/tsconfig.json.svg?style=svg)](https://circleci.com/gh/cblanc/tsconfig.json) 
+[![npm version](https://badge.fury.io/js/%40cablanchard%2Ftsconfig.svg)](https://badge.fury.io/js/%40cablanchard%2Ftsconfig)
 
 ## Usage
 
