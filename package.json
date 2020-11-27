@@ -10,7 +10,7 @@
     "tsconfig.json"
   ],
   "scripts": {
-    "test": "NODE_ENV=test node_modules/.bin/mocha"
+    "test": "NODE_ENV=test mocha"
   },
   "mocha": {
     "spec": "tests/*.ts",
