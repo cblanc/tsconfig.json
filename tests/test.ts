@@ -31,7 +31,7 @@ describe("tsconfig.json", () => {
   });
 
   it("generates files in dist", () => {
-    ["d.ts", "js", "js.map"]
+    ["d.ts", "js"]
       .map(extension => resolve(__dirname, `../dist/program.${extension}`))
       .map(existsSync)
       .forEach(result => assert.isTrue(result));
